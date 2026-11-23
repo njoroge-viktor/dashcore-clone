@@ -1,0 +1,132 @@
+{
+  "users": [
+    {
+      "id": "u_demo",
+      "firstName": "Demo",
+      "lastName": "User",
+      "email": "demo@corevia.dev",
+      "passwordHash": "0ead2060b65992dca4769af601a1b3a35ef38cfad2c2c465bb160ea764157c5d",
+      "createdAt": "2026-01-10T09:00:00.000Z"
+    }
+  ],
+  "profile": [
+    {
+      "id": "me",
+      "fullName": "Demo User",
+      "email": "demo@corevia.dev",
+      "company": "Corevia Labs",
+      "role": "Product Lead",
+      "timezone": "Africa/Nairobi",
+      "bio": "Building delightful web products.",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "weeklyDigest": false,
+      "marketingEmails": false
+    }
+  ],
+  "teamMembers": [
+    { "id": "m1", "name": "Amara Okafor", "email": "amara@corevia.dev", "role": "Owner", "status": "active", "lastActive": "Just now" },
+    { "id": "m2", "name": "Lucas Meyer", "email": "lucas@corevia.dev", "role": "Admin", "status": "active", "lastActive": "2 hours ago" },
+    { "id": "m3", "name": "Priya Nair", "email": "priya@corevia.dev", "role": "Editor", "status": "active", "lastActive": "Yesterday" },
+    { "id": "m4", "name": "Tomás Ruiz", "email": "tomas@corevia.dev", "role": "Viewer", "status": "active", "lastActive": "3 days ago" }
+  ],
+  "invitations": [
+    { "id": "i1", "email": "hana@studio.io", "role": "Editor", "sentAt": "2026-11-18" }
+  ],
+  "apiKeys": [
+    { "id": "k1", "name": "Production Key", "env": "production", "prefix": "cv_live_8f3a", "createdAt": "2026-04-12", "status": "active" },
+    { "id": "k2", "name": "Mobile App Development", "env": "development", "prefix": "cv_test_21bc", "createdAt": "2026-03-28", "status": "active" },
+    { "id": "k3", "name": "Legacy Internal Tool", "env": "production", "prefix": "cv_live_09de", "createdAt": "2026-01-15", "status": "revoked" }
+  ],
+  "webhooks": [
+    { "id": "w1", "url": "https://api.example.com/hooks/billing", "events": ["invoice.paid", "subscription.updated"], "active": true }
+  ],
+  "billing": [
+    {
+      "id": "account",
+      "planId": "pro",
+      "cycle": "monthly",
+      "renewsOn": "2026-12-22",
+      "card": { "brand": "Visa", "last4": "4242", "exp": "08/28" },
+      "contactName": "Demo User",
+      "contactEmail": "billing@corevia.dev",
+      "taxId": "",
+      "usage": { "projects": 7, "projectsLimit": 20, "seats": 4, "seatsLimit": 10, "apiCalls": 412000, "apiCallsLimit": 1000000, "storageGb": 18, "storageLimitGb": 50 }
+    }
+  ],
+  "invoices": [
+    { "id": "INV-2026-011", "date": "2026-11-22", "amount": 49, "status": "paid" },
+    { "id": "INV-2026-010", "date": "2026-10-22", "amount": 49, "status": "paid" },
+    { "id": "INV-2026-009", "date": "2026-09-22", "amount": 49, "status": "paid" },
+    { "id": "INV-2026-008", "date": "2026-08-22", "amount": 19, "status": "paid" }
+  ],
+  "plans": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "desc": "For small teams launching their first production experience.",
+      "monthly": 0,
+      "features": ["3 live projects and unlimited previews", "Core templates and UI blocks", "Basic analytics and release history", "Email support during business hours"],
+      "limits": { "projects": 3, "seats": 2, "apiCalls": 50000, "storageGb": 5 }
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "desc": "For product teams that need speed, collaboration, and deeper control.",
+      "monthly": 49,
+      "popular": true,
+      "features": ["Unlimited live projects and environments", "Advanced analytics with team insights", "Role-based permissions and audit log", "Priority chat support"],
+      "limits": { "projects": 20, "seats": 10, "apiCalls": 1000000, "storageGb": 50 }
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "desc": "For organizations with security, compliance and scale requirements.",
+      "monthly": 199,
+      "features": ["Everything in Pro", "SSO / SAML and SCIM provisioning", "Dedicated success manager", "99.99% uptime SLA"],
+      "limits": { "projects": 999, "seats": 999, "apiCalls": 10000000, "storageGb": 1000 }
+    }
+  ],
+  "faqs": [
+    { "id": "f1", "category": "getting-started", "q": "What is Corevia and how does it work?", "a": "Corevia is a frontend foundation with landing pages, app screens and a component library. Pick a demo, swap in your content and deploy." },
+    { "id": "f2", "category": "getting-started", "q": "How do I get started with Corevia?", "a": "Clone the repository, run npm install and npm run dev. Every page lives under src/app and pulls its content from typed config files." },
+    { "id": "f3", "category": "billing", "q": "What pricing plans are available?", "a": "Starter is free, Pro is $49/month and Enterprise is $199/month. Annual billing saves 10%." },
+    { "id": "f4", "category": "billing", "q": "Is there a free trial available?", "a": "Yes. Pro includes a 14-day trial with no credit card required." },
+    { "id": "f5", "category": "technical", "q": "Which browsers are supported?", "a": "The latest two versions of Chrome, Edge, Firefox and Safari, on desktop and mobile." },
+    { "id": "f6", "category": "technical", "q": "Can I customize the components?", "a": "Everything is plain React with Tailwind classes and CSS design tokens, so you can restyle or extend any component." },
+    { "id": "f7", "category": "account", "q": "How do I reset my password?", "a": "Use the Forgot password page. We'll email a reset link that stays valid for 30 minutes." },
+    { "id": "f8", "category": "account", "q": "How do I enable two-factor authentication?", "a": "Open Account settings, choose Security and follow the steps to pair an authenticator app." },
+    { "id": "f9", "category": "api", "q": "How do I get API access?", "a": "Create a key in Developer settings. Keys can be scoped to development or production." },
+    { "id": "f10", "category": "api", "q": "What are the API rate limits?", "a": "Starter allows 60 requests/minute, Pro 600 and Enterprise is custom." },
+    { "id": "f11", "category": "integrations", "q": "How do I connect to Slack?", "a": "Add a webhook endpoint in Developer settings and paste your Slack incoming-webhook URL." },
+    { "id": "f12", "category": "integrations", "q": "Does Corevia integrate with GitHub?", "a": "Yes. Connect a repository to deploy previews on every pull request." }
+  ],
+  "testimonials": [
+    { "id": "t1", "name": "Sarah Chen", "role": "Head of Product, Lumen", "quote": "We used to spend weeks on landing pages. Now new pages ship in an afternoon.", "rating": 5 },
+    { "id": "t2", "name": "Marcus Johnson", "role": "CTO, Fieldnote", "quote": "The design system is thoughtful. Every component just works together beautifully.", "rating": 5 },
+    { "id": "t3", "name": "Emily Rodriguez", "role": "Founder, Parcel", "quote": "We moved our entire frontend over and haven't looked back. The quality is unmatched.", "rating": 5 },
+    { "id": "t4", "name": "David Kim", "role": "Engineering Manager, Orbit", "quote": "Clean architecture, sensible defaults and great performance out of the box.", "rating": 5 },
+    { "id": "t5", "name": "Aisha Bello", "role": "Designer, Northwind", "quote": "Dark mode, motion and typography are all handled with real care.", "rating": 5 },
+    { "id": "t6", "name": "Jonas Weber", "role": "Indie Hacker", "quote": "I launched three products this year on top of it. Worth every cent.", "rating": 4 }
+  ],
+  "team": [
+    { "id": "p1", "name": "Rafael Marques", "role": "Chief Executive Officer" },
+    { "id": "p2", "name": "Elena Rossi", "role": "Head of Design" },
+    { "id": "p3", "name": "Marcus Chen", "role": "Lead Engineer" },
+    { "id": "p4", "name": "Sarah Miller", "role": "Product Manager" },
+    { "id": "p5", "name": "David Thorne", "role": "Platform Engineer" },
+    { "id": "p6", "name": "Sophia Zhang", "role": "Data Scientist" },
+    { "id": "p7", "name": "James Wilson", "role": "Customer Success" },
+    { "id": "p8", "name": "Lucia Mendez", "role": "Marketing Lead" }
+  ],
+  "contactMessages": [],
+  "subscribers": [],
+  "waitlist": [],
+  "chatReplies": [
+    { "id": "c1", "match": ["price", "pricing", "cost", "plan"], "reply": "Starter is free, Pro is $49/month and Enterprise is $199/month. Annual billing saves 10%." },
+    { "id": "c2", "match": ["hello", "hi", "hey"], "reply": "Hi there! I can answer questions about features, pricing, integrations or getting started." },
+    { "id": "c3", "match": ["integrat", "slack", "github", "api"], "reply": "You can connect Slack, GitHub and 40+ other tools through webhooks and our REST API." },
+    { "id": "c4", "match": ["secure", "security", "privacy", "data"], "reply": "Conversations are encrypted in transit and at rest, and you control data retention per workspace." },
+    { "id": "c5", "match": ["language", "spanish", "translate"], "reply": "The assistant understands 30+ languages and replies in the language you write in." }
+  ]
+}
